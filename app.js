@@ -27,8 +27,9 @@ app.directive('errSrc', function() {
 app.config(['$routeProvider','$locationProvider',
   function($routeProvider,$locationProvider){
     $routeProvider.
-      when('/candidate-list',{
-      templateUrl: 'partials/index.html'
+      when('/report',{
+      templateUrl: 'partials/report.html',
+      controller: 'ReportCtrl'
     }).
       otherwise({
       redirectTo:'/',
@@ -46,19 +47,61 @@ app.factory('DataService', function ($firebase){
   var DataService = {};
   var ref = new Firebase("https://councilor.firebaseio.com/");
   
-  DataService.candidates = function candidates(){
+  DataService.candidates = function (){
 
     var sync = $firebase(ref.child("candidates/"));
     //return sync.$asObject();
     return sync.$asArray();
     
   };
+
+  DataService.getCandidatesObj = function (){
+
+    var sync = $firebase(ref.child("candidates/"));
+    return sync.$asObject();
+  
+  };
+  DataService.getDistricts = function (){
+
+    var sync = $firebase(ref.child("districts/"));
+    return sync.$asArray();
+    
+  };
+  DataService.getDistrictsObj = function (){
+
+    var sync = $firebase(ref.child("districts/"));
+    return sync.$asObject();
+    
+  };
+
+  DataService.getReports = function (){
+
+    var sync = $firebase(ref.child("reports/"));
+    return sync.$asArray();
+    
+  };
+
+  DataService.pushReports = function ($item){
+
+    var sync = $firebase(ref.child("reports/"));
+    sync.$push($item).then(function(newChildRef) {
+        console.log("added record with id " + newChildRef.name());
+    });
+    
+  };
+
   return DataService;
 
   
 
 })
 
+app.controller('NavCtrl', ['$scope', '$location', function ($scope, $location){
+   $scope.go = function(path){
+      $location.path(path);
+   };
+
+}]);
 app.controller('IndexCtrl', ['$scope', 'DataService', function ($scope, DataService){
    $scope.candidates = DataService.candidates();
   
@@ -98,18 +141,11 @@ app.controller('IndexCtrl', ['$scope', 'DataService', function ($scope, DataServ
    
 }]);
 
-app.controller('DistrictCtrl', ['$scope',function($scope){
+app.controller('DistrictCtrl', ['$scope', 'DataService',function($scope, DataService){
 
   $scope.district = 'all';
   
-  $scope.districts = [{"district_no":1,"district_area":'士林北投',"district_candidates":21,"district_seats":13},
-                     {"district_no":2,"district_area":'內湖南港',"district_candidates":14,"district_seats":9},
-                     {"district_no":3,"district_area":'松山信義',"district_candidates":17,"district_seats":10},
-                     {"district_no":4,"district_area":'中山大同',"district_candidates":14,"district_seats":8},
-                     {"district_no":5,"district_area":'中正萬華',"district_candidates":15,"district_seats":8},
-                     {"district_no":6,"district_area":'大安文山',"district_candidates":22,"district_seats":13},
-                     {"district_no":7,"district_area":'平地原住民',"district_candidates":2,"district_seats":1},
-                     {"district_no":8,"district_area":'山地原住民',"district_candidates":3,"district_seats":1}];
+  $scope.districts = DataService.getDistricts();
 
   $scope.selectDistrict = function(district){
     $scope.district = district;
@@ -150,4 +186,38 @@ app.controller('DistrictCtrl', ['$scope',function($scope){
   };
 
 }]);
+
+app.controller('ReportCtrl', ['$scope', 'DataService', function ($scope, DataService){
+    $scope.reports = DataService.getReports();
+    $scope.candidates = DataService.getCandidatesObj();
+
+    $scope.item = {};
+    $scope.submitReport = function(){
+        console.log("submit");
+        DataService.pushReports($scope.item);
+        $scope.item = {};
+      
+    };
+    $scope.toggleForm = function(){
+        $scope.showForm = !$scope.showForm;
+    };
+    $scope.districts = DataService.getDistrictsObj();
+    $scope.getCouncilorDistrict = function(name){
+        
+        if($scope.candidates[name]){
+          var district_no = $scope.candidates[name].district;
+          if($scope.districts[district_no]){
+             return $scope.districts[district_no].district_area;
+
+          }
+          
+
+        }
+        
+
+    };
+  
+
+}]);
+
 

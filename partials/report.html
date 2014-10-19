@@ -1,0 +1,87 @@
+<div id="content" class="wrapper" ng-controller="DistrictCtrl">
+  <div class="ui segment">
+
+  <div class="ui small icon input">
+     <i class="search icon"></i>
+     <input type="text" placeholder="姓名搜尋" ng-model="query">
+  </div>
+
+  <div class="ui feed segment">
+  <div class="event" ng-repeat="n in reports | filter:{'councilor':query}">
+    <div class="label">
+      <img ng-src="images/candidates/{{n.councilor}}.jpg" err-src="images/candidate-not-found.jpg">
+    </div>
+    <div class="content">
+      <div class="date">
+        {{n.date}}
+      </div>
+      <div class="summary">
+        {{n.councilor}} {{n.description}}
+      </div>
+      <div class="extra text">
+        來源：<a class="report_src" href="{{n.src_link}}" target="_blank">{{n.src_name}}</a><br/>
+        {{n.councilor}} 是 {{getCouncilorDistrict(n.councilor)}} 選區的議員
+      </div>
+    </div>
+  </div>
+  </div>
+
+<div class="ui small red button" ng-click="toggleForm()">
+  <span ng-hide="showForm"><i class="add icon"></i> 增加一筆記錄</span>
+  <span ng-show="showForm"><i class="minus icon"></i> 隱藏表單</span>
+</div>
+<div class="ui form segment" id="report_form" ng-show="showForm">
+  
+  <div class="two fields">
+    <div class="field">
+    <label>議員姓名</label>
+    <div class="ui left labeled icon input">
+      <input type="text" placeholder="請填寫全名" ng-model="item.councilor">
+      <i class="user icon"></i>
+      <div class="ui corner label">
+        <i class="icon asterisk"></i>
+      </div>
+    </div>
+    </div>
+    <div class="field">
+      <label>日期</label>
+      <input placeholder="例如：2014-11-29" type="text" ng-model="item.date">
+    </div>
+  </div>
+  <div class="field">
+    <label>描述</label>
+    <div class="ui left labeled icon input">
+      <input type="text" ng-model="item.description">
+      <i class="pencil icon"></i>
+      <div class="ui corner label">
+        <i class="icon asterisk"></i>
+      </div>
+    </div>
+  </div>
+  <div class="two fields">
+    <div class="field">
+    <label>來源</label>
+    <div class="ui left labeled icon input">
+      <input type="text" placeholder="請填寫媒體名稱" ng-model="item.src_name">
+      <div class="ui corner label">
+        <i class="icon asterisk"></i>
+      </div>
+    </div>
+    </div>
+    <div class="field">
+      <label>連結</label>
+      <div class="ui left labeled icon input">
+      <input placeholder="請填寫來源連結" type="text" ng-model="item.src_link">
+      <div class="ui corner label">
+        <i class="icon asterisk"></i>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui teal small submit button" ng-click="submitReport()">送出</div>
+</div>
+
+  
+
+</div><!-- end of ui segment -->
+</div><!-- end of wrapper -->

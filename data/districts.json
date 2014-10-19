@@ -1,0 +1,50 @@
+{
+   "1": {  
+      "district_no":1,
+      "district_area":"士林北投",
+      "district_candidates":21,
+      "district_seats":13
+   },
+   "2": {  
+      "district_no":2,
+      "district_area":"內湖南港",
+      "district_candidates":14,
+      "district_seats":9
+   },
+   "3": {  
+      "district_no":3,
+      "district_area":"松山信義",
+      "district_candidates":17,
+      "district_seats":10
+   },
+   "4": {  
+      "district_no":4,
+      "district_area":"中山大同",
+      "district_candidates":14,
+      "district_seats":8
+   },
+   "5": {  
+      "district_no":5,
+      "district_area":"中正萬華",
+      "district_candidates":15,
+      "district_seats":8
+   },
+   "6": {  
+      "district_no":6,
+      "district_area":"大安文山",
+      "district_candidates":22,
+      "district_seats":13
+   },
+   "7": {  
+      "district_no":7,
+      "district_area":"平地原住民",
+      "district_candidates":2,
+      "district_seats":1
+   },
+   "8": {  
+      "district_no":8,
+      "district_area":"山地原住民",
+      "district_candidates":3,
+      "district_seats":1
+   }
+}

@@ -49,7 +49,18 @@ a {
 }
 .nav {
     color: white;
+
+}
+.nav_item {
+    display: inline-block;
+    cursor: pointer;
+    height: 40px;
     padding: 5px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.nav_item:hover {
+    background: rgba(200,200,200,0.4);
 }
 #navigation{
     z-index: 10;
@@ -62,8 +73,11 @@ a {
 #content {
 	margin-top: 40px;
 }
+.color_red {
+  color: rgb(214,90,90);
+}
 /* ------------------------------------------------------------ */
-/*  */
+/* Index */
 /* ------------------------------------------------------------ */
 .candidate_collection_title h2 {
 	color: rgb(53,55,54);
@@ -183,3 +197,19 @@ span.tooltip:after {
 	top: 120px;
 	left:0px;
 }
+/* ------------------------------------------------------------ */
+/* Report */
+/* ------------------------------------------------------------ */
+.report_item {
+   width: 240px;
+}
+.report_src, .report_src:visited {
+  color: rgb(180,180,180);
+}
+.report_src:hover {
+  color: blue;
+}
+
+
+
+
