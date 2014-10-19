@@ -36,7 +36,7 @@ app.config(['$routeProvider','$locationProvider',
       controller: 'IndexCtrl'
     });
 
-    $locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(false);
 
   }
 ]);
