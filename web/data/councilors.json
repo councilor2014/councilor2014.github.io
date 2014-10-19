@@ -10,22 +10,33 @@
     ".priority" : 2,
     "district" : 1,
     "name" : "汪志冰",
+    "present" : "現任",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/365efe57051c4288808e7a55fb2e9992/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/365efe57051c4288808e7a55fb2e9992/2010/"
   },
   "吳碧珠" : {
     ".priority" : 3,
     "district" : 1,
     "name" : "吳碧珠",
+    "present" : "現任",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/6fdad19e7e744df7a86b20813c10994c/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/6fdad19e7e744df7a86b20813c10994c/2010/"
+  
   },
   "黃平洋" : {
     ".priority" : 4,
     "district" : 1,
     "name" : "黃平洋",
+    "present" : "現任",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/b318a34db2e74e98ae5d83153035e686/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/b318a34db2e74e98ae5d83153035e686/2010/"
+  
   },
   "周佳君" : {
     ".priority" : 5,
@@ -50,14 +61,22 @@
     "party" : "新黨",
     "partyEng" : "NP",
     "website" : "http://tcc9104.tcc.gov.tw/onweb.jsp?webno=3333333332",
-    "facebook" : "https://www.facebook.com/apan710"
+    "facebook" : "https://www.facebook.com/apan710",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/5bc1cdb879644063bea1b54e8493d02f/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/5bc1cdb879644063bea1b54e8493d02f/2010/"
+  
   },
   "林世宗" : {
     ".priority" : 8,
     "district" : 1,
     "name" : "林世宗",
+    "present" : "現任",
     "party" : "民主進步黨",
-    "partyEng" : "DPP"
+    "partyEng" : "DPP",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/049fb7f59020421e96b6386d211be6d3/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/049fb7f59020421e96b6386d211be6d3/2010/"
+  
   },
   "陳慈慧" : {
     ".priority" : 9,
@@ -68,6 +87,7 @@
   },
   "王威中" : {
     ".priority" : 10,
+    "district" : 1,
     "name" : "王威中",
     "party" : "民主進步黨",
     "partyEng" : "DPP"
@@ -83,31 +103,47 @@
     ".priority" : 12,
     "district" : 1,
     "name" : "吳思瑤",
+    "present" : "現任",
     "party" : "民主進步黨",
-    "partyEng" : "DPP"
+    "partyEng" : "DPP",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/fe27d30fe95b44a6abd23bac43b5fdd6/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/fe27d30fe95b44a6abd23bac43b5fdd6/2010/"
+  
   },
   "何志偉" : {
     ".priority" : 13,
     "district" : 1,
     "name" : "何志偉",
+    "present" : "現任",
     "party" : "民主進步黨",
-    "partyEng" : "DPP"
+    "partyEng" : "DPP",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/84f1339212c84278b28ee0c2b37e0278/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/84f1339212c84278b28ee0c2b37e0278/2010/"
+  
   },
   "賴素如" : {
     ".priority" : 14,
     "district" : 1,
     "name" : "賴素如",
+    "present" : "現任",
     "party" : "無黨籍",
     "partyEng" : "NONE",
-    "facebook" : "https://www.facebook.com/sweetlai0323"
+    "facebook" : "https://www.facebook.com/sweetlai0323",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/ed46ba38874143de9d1383ddf7821d05/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/ed46ba38874143de9d1383ddf7821d05/2010/"
+  
   },
   "陳政忠" : {
     ".priority" : 15,
     "district" : 1,
     "name" : "陳政忠",
+    "present" : "現任",
     "party" : "無黨籍",
     "partyEng" : "NONE",
-    "facebook" : "https://www.facebook.com/pages/%E5%8F%B0%E5%8C%97%E5%B8%82%E8%AD%B0%E5%93%A1-%E9%99%B3%E6%94%BF%E5%BF%A0/395664323833020"
+    "facebook" : "https://www.facebook.com/pages/%E5%8F%B0%E5%8C%97%E5%B8%82%E8%AD%B0%E5%93%A1-%E9%99%B3%E6%94%BF%E5%BF%A0/395664323833020",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/cbf340b72fd3402c9d3675164123c528/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/cbf340b72fd3402c9d3675164123c528/2010/"
+  
   },
   "王奕凱" : {
     ".priority" : 16,
@@ -129,8 +165,12 @@
     ".priority" : 18,
     "district" : 1,
     "name" : "林瑞圖",
+    "present" : "現任",
     "party" : "無黨籍",
-    "partyEng" : "NONE"
+    "partyEng" : "NONE",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/ce5d1145480a4daca49e8e5b7fb9c53d/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/ce5d1145480a4daca49e8e5b7fb9c53d/2010/"
+  
   },
   "王英文" : {
     ".priority" : 19,
@@ -144,10 +184,14 @@
     ".priority" : 20,
     "district" : 1,
     "name" : "陳建銘",
+    "present" : "現任",
     "party" : "臺灣團結聯盟",
     "partyEng" : "TSU",
     "facebook" : "https://www.facebook.com/urfriendalexchen87?fref=browse_search",
-    "website" : "http://tcc9501.tcc.gov.tw/onweb.jsp?webno=3333333332"
+    "website" : "http://tcc9501.tcc.gov.tw/onweb.jsp?webno=3333333332",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/d68d2180666b402db3551cae6155dd9e/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/d68d2180666b402db3551cae6155dd9e/2010/"
+  
   },
   "王小玉" : {
     ".priority" : 21,
@@ -162,28 +206,43 @@
     "district" : 2,
     "name" : "陳義洲",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/dd4070a3801d494f923797107ec8806f/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/dd4070a3801d494f923797107ec8806f/2010/"
+  
   },
   "李彥秀" : {
     ".priority" : 23,
     "district" : 2,
     "name" : "李彥秀",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/6f0b632a9f074934929f342645ed5188/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/6f0b632a9f074934929f342645ed5188/2010/"
   },
   "吳世正" : {
     ".priority" : 24,
     "district" : 2,
     "name" : "吳世正",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/11bd4f2fcfe2428e84b6da007d79e84b/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/11bd4f2fcfe2428e84b6da007d79e84b/2010/"
+  
   },
   "闕枚莎" : {
     ".priority" : 25,
     "district" : 2,
     "name" : "闕枚莎",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/6719c21671f645378ba3d52e4ab50985/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/6719c21671f645378ba3d52e4ab50985/2010/"
+  
   },
   "黃子哲" : {
     ".priority" : 26,
@@ -213,28 +272,44 @@
     "district" : 2,
     "name" : "王孝維",
     "party" : "民主進步黨",
-    "partyEng" : "DPP"
+    "partyEng" : "DPP",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/a72279e1d73f45b4846b7d5fcd73419d/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/a72279e1d73f45b4846b7d5fcd73419d/2010/"
+  
   },
   "江志銘" : {
     ".priority" : 29,
     "district" : 2,
     "name" : "江志銘",
     "party" : "民主進步黨",
-    "partyEng" : "DPP"
+    "partyEng" : "DPP",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/4bca27b2acc745638d3e9affdbb212c3/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/4bca27b2acc745638d3e9affdbb212c3/2010/"
+  
   },
   "高嘉瑜" : {
     ".priority" : 30,
     "district" : 2,
     "name" : "高嘉瑜",
     "party" : "民主進步黨",
-    "partyEng" : "DPP"
+    "partyEng" : "DPP",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/1e573ac2bab34acf90a9687a088f84d5/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/1e573ac2bab34acf90a9687a088f84d5/2010/"
+  
   },
   "李建昌" : {
     ".priority" : 31,
     "district" : 2,
     "name" : "李建昌",
     "party" : "民主進步黨",
-    "partyEng" : "DPP"
+    "partyEng" : "DPP",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/4f6938587a114ea7897fbe290b524e94/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/4f6938587a114ea7897fbe290b524e94/2010/"
+  
   },
   "許明偉" : {
     ".priority" : 32,
@@ -257,56 +332,87 @@
     "name" : "黃珊珊",
     "party" : "親民黨",
     "partyEng" : "PFP",
-    "facebook" : "https://www.facebook.com/taipei33"
+    "facebook" : "https://www.facebook.com/taipei33",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/c09ee00d7321467cbc3b0ea80750efd0/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/c09ee00d7321467cbc3b0ea80750efd0/2010/"
   },
   "陳永德" : {
     ".priority" : 35,
     "district" : 3,
     "name" : "陳永德",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/c97c51f80a384545b77dfaa33c9e7d45/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/c97c51f80a384545b77dfaa33c9e7d45/2010/"
+  
   },
   "秦慧珠" : {
     ".priority" : 36,
     "district" : 3,
     "name" : "秦慧珠",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/2a9a72d4de95438dbecddc8d9fc61d40/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/2a9a72d4de95438dbecddc8d9fc61d40/2010/"
+  
   },
   "陳孋輝" : {
     ".priority" : 37,
     "district" : 3,
     "name" : "陳孋輝",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/b3c34d6a01b44ef2ab67090de21ac74a/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/b3c34d6a01b44ef2ab67090de21ac74a/2010/"
+  
   },
   "王鴻薇" : {
     ".priority" : 38,
     "district" : 3,
     "name" : "王鴻薇",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/f9584fc77e454003b46d421cd13f9183/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/f9584fc77e454003b46d421cd13f9183/2010/"
+  
   },
   "戴錫欽" : {
     ".priority" : 39,
     "district" : 3,
     "name" : "戴錫欽",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/124cfa5206f6420d9064d6a0e709db29/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/124cfa5206f6420d9064d6a0e709db29/2010/"
+  
   },
   "王正德" : {
     ".priority" : 40,
     "district" : 3,
     "name" : "王正德",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/08b3c1c09fa040eda92da62549fac8ef/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/08b3c1c09fa040eda92da62549fac8ef/2010/"
+  
   },
   "楊實秋" : {
     ".priority" : 41,
     "district" : 3,
     "name" : "楊實秋",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/8b7441277fc64266aa67c69ab7313a99/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/8b7441277fc64266aa67c69ab7313a99/2010/"
+  
   },
   "楊世光" : {
     ".priority" : 42,
@@ -336,21 +442,33 @@
     "district" : 3,
     "name" : "許淑華",
     "party" : "民主進步黨",
-    "partyEng" : "DPP"
+    "partyEng" : "DPP",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/db9f19b5e0ba485eb36c88a3fc31e990/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/db9f19b5e0ba485eb36c88a3fc31e990/2010/"
+  
   },
   "張茂楠" : {
     ".priority" : 46,
     "district" : 3,
     "name" : "張茂楠",
     "party" : "民主進步黨",
-    "partyEng" : "DPP"
+    "partyEng" : "DPP",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/3cde861a29d34f08b94564f1d418df25/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/3cde861a29d34f08b94564f1d418df25/2010/"
+  
   },
   "洪健益" : {
     ".priority" : 47,
     "district" : 3,
     "name" : "洪健益",
     "party" : "民主進步黨",
-    "partyEng" : "DPP"
+    "partyEng" : "DPP",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/68218ef09ec84aefb391598e3c7a36f2/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/68218ef09ec84aefb391598e3c7a36f2/2010/"
+  
   },
   "徐世勲" : {
     ".priority" : 48,
@@ -402,7 +520,11 @@
     "district" : 4,
     "name" : "葉林傳",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/28ac3fe207bd461cac045ff52bca3a3e/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/28ac3fe207bd461cac045ff52bca3a3e/2010/"
+  
   },
   "陳炳甫" : {
     ".priority" : 55,
@@ -439,14 +561,22 @@
     "district" : 4,
     "name" : "梁文傑",
     "party" : "民主進步黨",
-    "partyEng" : "DPP"
+    "partyEng" : "DPP",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/fb628f68a5e04875ace077a3c2e674e3/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/fb628f68a5e04875ace077a3c2e674e3/2010/"
+  
   },
   "王世堅" : {
     ".priority" : 60,
     "district" : 4,
     "name" : "王世堅",
     "party" : "民主進步黨",
-    "partyEng" : "DPP"
+    "partyEng" : "DPP",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/f07c8d85282a426db38c49267b20b709/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/f07c8d85282a426db38c49267b20b709/2010/"
+  
   },
   "黃向羣" : {
     ".priority" : 61,
@@ -484,35 +614,55 @@
     "name" : "林國成",
     "party" : "親民黨",
     "partyEng" : "PFP",
-    "facebook" : "https://www.facebook.com/GokuoCheng"
+    "facebook" : "https://www.facebook.com/GokuoCheng",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/323c76b2e37343588aecd2593938eaa2/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/323c76b2e37343588aecd2593938eaa2/2010/"
+  
   },
   "應曉薇" : {
     ".priority" : 66,
     "district" : 5,
     "name" : "應曉薇",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/94a7abb42994401aa77de38458335e5a/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/94a7abb42994401aa77de38458335e5a/2010/"
+  
   },
   "吳志剛" : {
     ".priority" : 67,
     "district" : 5,
     "name" : "吳志剛",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/a7ef0d91399144868483e4a8a9a1f2af/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/a7ef0d91399144868483e4a8a9a1f2af/2010/"
+  
   },
   "鍾小平" : {
     ".priority" : 68,
     "district" : 5,
     "name" : "鍾小平",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/590f4a3e3ad94b79bfe0c7e8fa264dba/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/590f4a3e3ad94b79bfe0c7e8fa264dba/2010/"
+  
   },
   "郭昭巖" : {
     ".priority" : 69,
     "district" : 5,
     "name" : "郭昭巖",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/09a9ae10a7fe46ee91f16a6a5d0d6327/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/09a9ae10a7fe46ee91f16a6a5d0d6327/2010/"
+  
   },
   "張榮法" : {
     ".priority" : 70,
@@ -535,28 +685,44 @@
     "district" : 5,
     "name" : "董仲彥",
     "party" : "民主進步黨",
-    "partyEng" : "DPP"
+    "partyEng" : "DPP",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/683661f4c3aa47aeb5058a78442bcd73/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/683661f4c3aa47aeb5058a78442bcd73/2010/"
+  
   },
   "顏聖冠" : {
     ".priority" : 73,
     "district" : 5,
     "name" : "顏聖冠",
     "party" : "民主進步黨",
-    "partyEng" : "DPP"
+    "partyEng" : "DPP",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/65ce32f087bd41868b4e04e55c4f8db6/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/65ce32f087bd41868b4e04e55c4f8db6/2010/"
+  
   },
   "劉耀仁" : {
     ".priority" : 74,
     "district" : 5,
     "name" : "劉耀仁",
     "party" : "民主進步黨",
-    "partyEng" : "DPP"
+    "partyEng" : "DPP",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/b6615bca8b5f47ada9ed6fab2779136c/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/b6615bca8b5f47ada9ed6fab2779136c/2010/"
+  
   },
   "周威佑" : {
     ".priority" : 75,
     "district" : 5,
     "name" : "周威佑",
     "party" : "民主進步黨",
-    "partyEng" : "DPP"
+    "partyEng" : "DPP",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/7bcd062a49124720b717fedd288210f0/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/7bcd062a49124720b717fedd288210f0/2010/"
+  
   },
   "康明道" : {
     ".priority" : 76,
@@ -601,14 +767,20 @@
     "district" : 6,
     "name" : "歐陽龍",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/108f82df04fd49d3aa59f3b42904f380/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/108f82df04fd49d3aa59f3b42904f380/2010/"
   },
   "李慶元" : {
     ".priority" : 82,
     "district" : 6,
     "name" : "李慶元",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/7e5a568ef98741c782200d1b0937718e/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/7e5a568ef98741c782200d1b0937718e/2010/"
   },
   "徐弘庭" : {
     ".priority" : 83,
@@ -616,13 +788,17 @@
     "name" : "徐弘庭",
     "party" : "中國國民黨",
     "partyEng" : "KMT"
+
   },
   "李新" : {
     ".priority" : 84,
     "district" : 6,
     "name" : "李新",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/dc88c0a6ad924b95bb4eb01d6a30617a/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/dc88c0a6ad924b95bb4eb01d6a30617a/2010/"
   },
   "王致雅" : {
     ".priority" : 85,
@@ -636,21 +812,30 @@
     "district" : 6,
     "name" : "厲耿桂芳",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/a993aef4a53d4f23a058917fa22a6636/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/a993aef4a53d4f23a058917fa22a6636/2010/"
   },
   "王欣儀" : {
     ".priority" : 87,
     "district" : 6,
     "name" : "王欣儀",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/f9b7056b45344a2a9191f1dc4f4256bf/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/f9b7056b45344a2a9191f1dc4f4256bf/2010/"
   },
   "陳錦祥" : {
     ".priority" : 88,
     "district" : 6,
     "name" : "陳錦祥",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/9637c182db1a47bb931f3256d4c9cdcb/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/9637c182db1a47bb931f3256d4c9cdcb/2010/"
   },
   "陳彥伯" : {
     ".priority" : 89,
@@ -658,7 +843,10 @@
     "name" : "陳彥伯",
     "party" : "新黨",
     "partyEng" : "NP",
-    "facebook" : "https://www.facebook.com/pages/%E9%99%B3%E5%BD%A5%E4%BC%AF%E5%8A%A0%E6%B2%B9%E5%9C%98/131241610248544"
+    "present" : "現任",
+    "facebook" : "https://www.facebook.com/pages/%E9%99%B3%E5%BD%A5%E4%BC%AF%E5%8A%A0%E6%B2%B9%E5%9C%98/131241610248544",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/3c81beac95c84bfc86f29594251021ae/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/3c81beac95c84bfc86f29594251021ae/2010/"
   },
   "潘翰聲" : {
     ".priority" : 90,
@@ -673,14 +861,20 @@
     "district" : 6,
     "name" : "周柏雅",
     "party" : "民主進步黨",
-    "partyEng" : "DPP"
+    "partyEng" : "DPP",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/aa75facf1c67484bbc779015620ee101/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/aa75facf1c67484bbc779015620ee101/2010/"
   },
   "李慶鋒" : {
     ".priority" : 92,
     "district" : 6,
     "name" : "李慶鋒",
     "party" : "民主進步黨",
-    "partyEng" : "DPP"
+    "partyEng" : "DPP",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/79e15469fa6649b59bf00ad50c3fa8e4/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/79e15469fa6649b59bf00ad50c3fa8e4/2010/"
   },
   "王閔生" : {
     ".priority" : 93,
@@ -701,7 +895,10 @@
     "district" : 6,
     "name" : "阮昭雄",
     "party" : "民主進步黨",
-    "partyEng" : "DPP"
+    "partyEng" : "DPP",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/504f2cf13ee14406af613be398320d2a/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/504f2cf13ee14406af613be398320d2a/2010/"
   },
   "聶紹雄" : {
     ".priority" : 96,
@@ -760,7 +957,11 @@
     "district" : 7,
     "name" : "李芳儒",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/c6fe38f6f6c84bfcb1e54dee136896df/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/c6fe38f6f6c84bfcb1e54dee136896df/2010/"
+  
   },
   "馬耀‧谷木MayawKumu" : {
     ".priority" : 104,
@@ -774,7 +975,11 @@
     "district" : 8,
     "name" : "李傅中武LEEFUCHUNGWU",
     "party" : "中國國民黨",
-    "partyEng" : "KMT"
+    "partyEng" : "KMT",
+    "present" : "現任",
+    "g0vbill" : "http://councils.g0v.tw/councilors/biller/9e3ab9815ed744a7ac8c517cbd51de3e/2010/",
+    "g0vsuggestor" : "http://councils.g0v.tw/councilors/suggestor/9e3ab9815ed744a7ac8c517cbd51de3e/2010/"
+  
   },
   "伊凡諾幹IbanNokan" : {
     ".priority" : 106,
