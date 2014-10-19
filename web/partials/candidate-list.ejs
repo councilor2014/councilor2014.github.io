@@ -1,0 +1,94 @@
+<div ng-include="'partials/nav-bar.html'"></div>
+<div class="page_wrapper">
+<div class="modal" ng-hide="candidates"></div>
+<div class="top_board"><div class="wrapper">候選人表現</div></div>
+<div class="wrapper" ng-controller="districtCtrl">
+
+
+    <div class="candidate_list"><!-- election_state:join -->
+
+      <div class="index_segment_title">{{conf.electionPosition}}參選人</div>
+
+      <!-- ////////////////////////////////////////////////////////////// -->
+      <%= include district-menu-wide %>
+         
+      <!-- ////////////////////////////////////////////////////////////// -->
+
+
+      <div class="candidate_collection">
+      <div class="candidate"
+           ng-repeat="n in candidates | filter:{election_state:'join', name:query} | filter:districtFilter">
+          <a href="#!/candidate/{{n.id}}">
+          <img class="rounded ui image candidate_img" ng-src="images/candidates/{{n.id}}.jpg" id="candidate_{{n.id}}" ng-click="candidateChoose()"></a>
+
+          <div class="progress_info_floating">
+            <a href="#!/candidate/{{n.id}}">
+            <div class="progress_info_floating_text"
+                 id="candidateName_{{n.id}}"
+                ng-click="candidateChoose()">{{n.name}}</div></a>
+          </div>
+<!-- -->
+          <div class="progress">
+              <div class="bar" style="width: {{n.replied_count / n.addressed_count * 100 || 0}}%;" 
+                   ng-hide="n.addressed_count==0">
+              
+          </div>
+          </div>
+
+          <div class="progress_info_rate">
+            回覆率：{{n.replied_count / n.addressed_count * 100 || 0 | number:0}}%</div>
+          <div class="progress_info_answered">已回答：{{n.replied_count}} </div>
+          <div class="progress_info_asked">被提問：{{n.addressed_count}}</div>
+<!-- -->
+          <img class="circular ui image candidate_list_party"
+           ng-src="images/{{n.partyEng}}.png"></img>
+      </div>
+      </div>
+    </div><!--end of candidate_list //election_state:join -->
+
+    <div class="candidate_list"><!-- election_state:quit -->
+
+     <div class="index_segment_title">已退出參選</div>
+
+      <div class="candidate_collection">
+      <div class="candidate"
+           ng-repeat="n in candidates | filter:{election_state:'quit'}">
+          <a href="#!/candidate/{{n.id}}">
+          <img class="rounded ui image candidate_img" ng-src="images/candidates/{{n.id}}.jpg"
+               id="candidate_{{n.id}}" ng-click="candidateChoose()"></a>
+
+          <div class="progress_info_floating">
+            <a href="#!/candidate/{{n.id}}">
+            <div class="progress_info_floating_text"
+                 id="candidateName_{{n.id}}"
+            ng-click="candidateChoose()">{{n.name}}</div></a>
+          </div>
+
+<!-- -->
+          <div class="progress">
+              <div class="bar" style="width: {{n.replied_count / n.addressed_count * 100}}%;">
+          </div>
+          </div>
+
+          <div class="progress_info_rate">
+            回覆率：{{n.replied_count / n.addressed_count * 100 | number:0}}%</div>
+          <div class="progress_info_answered">已回答：{{n.replied_count}} </div>
+          <div class="progress_info_asked">被提問：{{n.addressed_count}}</div>
+<!-- -->
+
+          <img class="circular ui image candidate_list_party"
+           ng-src="images/{{n.partyEng}}.png"></img>
+
+      </div>
+      </div>
+
+    </div><!--end of candidate_list //eletion_state:quit -->
+
+
+
+
+   
+    <div ng-include="'partials/footer.html'"></div>
+ 
+</div> <!--end of wrapper -->
+</div> <!--end of page_wrapper -->

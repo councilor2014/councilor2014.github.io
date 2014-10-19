@@ -1,0 +1,26 @@
+<div ng-controller="DistrictCtrl">
+  
+  <div>
+  <div class="district"
+       ng-click="selectDistrict('all')" 
+       ng-class="{'active':isSelected('all')}">所有選區</div> 
+  <div class="district" ng-repeat="d in districts"
+       ng-click="selectDistrict(d.district_no)" 
+       ng-class="{'district_active':isSelected(d.district_no)}">{{d.district_area}}</div>    
+  <input type="text" placeholder="姓名搜尋" ng-model="query">
+  </div>
+  
+ 
+<div class="candidate" ng-repeat="n in candidates | filter:{name:query} | filter:districtFilter">
+	<img class="candidate_img" ng-src="images/candidates/{{n.name}}.jpg" err-src="images/candidate-not-found.jpg">
+	
+	<img class="candidate_party_img"
+       ng-src="images/party/{{n.partyEng}}.png"></img>
+  <div class="candidate_name"
+       ng-click="candidateChoose()">{{n.name}}</div>
+  <div class="candidate_party"
+       ng-click="candidateChoose()">{{n.party}}</div>
+
+</div>
+
+</div>

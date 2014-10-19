@@ -1,0 +1,15 @@
+<div id="tool_bar_holder">
+  <div class="ui secondary menu" id="response_list_tool_bar_menu">
+       <a class="item question_list"
+          ng-click="selectDistrict('all')" 
+          ng-class="{'active':isSelected('all')}">所有選區</a> 
+       <a class="item question_list" ng-repeat="d in districts"
+          ng-click="selectDistrict(d.district_no)" 
+          ng-class="{'active':isSelected(d.district_no)}">{{d.district_area}}</a>    
+  </div>
+  <div class="ui small icon input web" id="list_tool_bar_search">
+     <i class="search icon"></i>
+     <input type="text" placeholder="姓名搜尋" ng-model="query">
+  </div>
+  
+</div><!-- end of tool_bar-->  

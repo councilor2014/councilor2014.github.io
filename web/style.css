@@ -1,0 +1,42 @@
+.candidate { 
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    margin: 4px;
+    vertical-align: top;
+}
+.candidate_img {
+    display: inline-block;
+    width: 100%;
+    height: 112px;
+}
+.candidate_name {
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	padding: 3px;
+}
+.candidate_party {
+	width: 100%;
+	font-size: 12px;
+	text-align: center;
+}
+.candidate_party_img {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;
+	left:0px;
+}
+.district {
+	display: inline-block;
+	border: 1px solid rgb(55,53,55);
+	cursor: pointer;
+	padding: 5px;
+
+}
+.district_active {
+	background: rgb(55,53,55);
+	color: white;
+
+}

@@ -1,0 +1,794 @@
+{
+  "陳重文" : {
+    ".priority" : 1,
+    "district" : 1,
+    "name" : "陳重文",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "汪志冰" : {
+    ".priority" : 2,
+    "district" : 1,
+    "name" : "汪志冰",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "吳碧珠" : {
+    ".priority" : 3,
+    "district" : 1,
+    "name" : "吳碧珠",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "黃平洋" : {
+    ".priority" : 4,
+    "district" : 1,
+    "name" : "黃平洋",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "周佳君" : {
+    ".priority" : 5,
+    "district" : 1,
+    "name" : "周佳君",
+    "party" : "人民民主陣線",
+    "partyEng" : "PATB",
+    "website" : "http://mixing-peopleboss.blogspot.tw/search?q=%E5%91%A8%E4%BD%B3%E5%90%9B"
+  },
+  "楊靜宇" : {
+    ".priority" : 6,
+    "district" : 1,
+    "name" : "楊靜宇",
+    "party" : "新黨",
+    "partyEng" : "NP",
+    "facebook" : "https://www.facebook.com/pages/%E6%A5%8A%E9%9D%9C%E5%AE%87%E5%BE%8C%E6%8F%B4%E6%9C%83/682458875178898"
+  },
+  "潘懷宗" : {
+    ".priority" : 7,
+    "district" : 1,
+    "name" : "潘懷宗",
+    "party" : "新黨",
+    "partyEng" : "NP",
+    "website" : "http://tcc9104.tcc.gov.tw/onweb.jsp?webno=3333333332",
+    "facebook" : "https://www.facebook.com/apan710"
+  },
+  "林世宗" : {
+    ".priority" : 8,
+    "district" : 1,
+    "name" : "林世宗",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "陳慈慧" : {
+    ".priority" : 9,
+    "district" : 1,
+    "name" : "陳慈慧",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "王威中" : {
+    ".priority" : 10,
+    "name" : "王威中",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "謝維洲" : {
+    ".priority" : 11,
+    "district" : 1,
+    "name" : "謝維洲",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "吳思瑤" : {
+    ".priority" : 12,
+    "district" : 1,
+    "name" : "吳思瑤",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "何志偉" : {
+    ".priority" : 13,
+    "district" : 1,
+    "name" : "何志偉",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "賴素如" : {
+    ".priority" : 14,
+    "district" : 1,
+    "name" : "賴素如",
+    "party" : "無黨籍",
+    "partyEng" : "NONE",
+    "facebook" : "https://www.facebook.com/sweetlai0323"
+  },
+  "陳政忠" : {
+    ".priority" : 15,
+    "district" : 1,
+    "name" : "陳政忠",
+    "party" : "無黨籍",
+    "partyEng" : "NONE",
+    "facebook" : "https://www.facebook.com/pages/%E5%8F%B0%E5%8C%97%E5%B8%82%E8%AD%B0%E5%93%A1-%E9%99%B3%E6%94%BF%E5%BF%A0/395664323833020"
+  },
+  "王奕凱" : {
+    ".priority" : 16,
+    "district" : 1,
+    "name" : "王奕凱",
+    "party" : "無黨籍",
+    "partyEng" : "NONE",
+    "facebook" : "https://www.facebook.com/xiao.s.feng"
+  },
+  "孫士堅" : {
+    ".priority" : 17,
+    "district" : 1,
+    "name" : "孫士堅",
+    "party" : "無黨籍",
+    "partyEng" : "NONE",
+    "facebook" : "https://www.facebook.com/jhongsin.li"
+  },
+  "林瑞圖" : {
+    ".priority" : 18,
+    "district" : 1,
+    "name" : "林瑞圖",
+    "party" : "無黨籍",
+    "partyEng" : "NONE"
+  },
+  "王英文" : {
+    ".priority" : 19,
+    "district" : 1,
+    "name" : "王英文",
+    "party" : "無黨籍",
+    "partyEng" : "NONE",
+    "facebook" : "https://www.facebook.com/pages/%E7%8E%8B%E8%8B%B1%E6%96%87%E8%80%81%E5%B8%AB/254470754736071"
+  },
+  "陳建銘" : {
+    ".priority" : 20,
+    "district" : 1,
+    "name" : "陳建銘",
+    "party" : "臺灣團結聯盟",
+    "partyEng" : "TSU",
+    "facebook" : "https://www.facebook.com/urfriendalexchen87?fref=browse_search",
+    "website" : "http://tcc9501.tcc.gov.tw/onweb.jsp?webno=3333333332"
+  },
+  "王小玉" : {
+    ".priority" : 21,
+    "district" : 1,
+    "name" : "王小玉",
+    "party" : "親民黨",
+    "partyEng" : "PFP",
+    "facebook" : "https://www.facebook.com/pages/%E8%A6%AA%E6%B0%91%E9%BB%A8-%E5%A3%AB%E6%9E%97%E5%8C%97%E6%8A%95%E5%8D%80%E5%B8%82%E8%AD%B0%E5%93%A1%E5%80%99%E9%81%B8%E4%BA%BA-%E7%8E%8B%E5%B0%8F%E7%8E%89/762677033770542"
+  },
+  "陳義洲" : {
+    ".priority" : 22,
+    "district" : 2,
+    "name" : "陳義洲",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "李彥秀" : {
+    ".priority" : 23,
+    "district" : 2,
+    "name" : "李彥秀",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "吳世正" : {
+    ".priority" : 24,
+    "district" : 2,
+    "name" : "吳世正",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "闕枚莎" : {
+    ".priority" : 25,
+    "district" : 2,
+    "name" : "闕枚莎",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "黃子哲" : {
+    ".priority" : 26,
+    "district" : 2,
+    "name" : "黃子哲",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "趙家蓉" : {
+    ".priority" : 27,
+    "district" : 2,
+    "name" : "趙家蓉",
+    "party" : "新黨",
+    "partyEng" : "NP",
+    "facebook" : "https://www.facebook.com/pages/%E8%B6%99%E5%AE%B6%E8%93%89%E6%9C%8D%E5%8B%99%E8%AE%9A/223335004526185"
+  },
+  "余筱菁" : {
+    ".priority" : 28,
+    "district" : 2,
+    "name" : "余筱菁",
+    "party" : "樹黨",
+    "partyEng" : "TP",
+    "facebook" : "https://www.facebook.com/taipeiheart"
+  },
+  "王孝維" : {
+    ".priority" : 29,
+    "district" : 2,
+    "name" : "王孝維",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "江志銘" : {
+    ".priority" : 29,
+    "district" : 2,
+    "name" : "江志銘",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "高嘉瑜" : {
+    ".priority" : 30,
+    "district" : 2,
+    "name" : "高嘉瑜",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "李建昌" : {
+    ".priority" : 31,
+    "district" : 2,
+    "name" : "李建昌",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "許明偉" : {
+    ".priority" : 32,
+    "district" : 2,
+    "name" : "許明偉",
+    "party" : "無黨籍",
+    "partyEng" : "NONE"
+  },
+  "陳嘉霖" : {
+    ".priority" : 33,
+    "district" : 2,
+    "name" : "陳嘉霖",
+    "party" : "臺灣團結聯盟",
+    "partyEng" : "TSU",
+    "facebokk" : "https://www.facebook.com/VincentchenTSU"
+  },
+  "黃珊珊" : {
+    ".priority" : 34,
+    "district" : 2,
+    "name" : "黃珊珊",
+    "party" : "親民黨",
+    "partyEng" : "PFP",
+    "facebook" : "https://www.facebook.com/taipei33"
+  },
+  "陳永德" : {
+    ".priority" : 35,
+    "district" : 3,
+    "name" : "陳永德",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "秦慧珠" : {
+    ".priority" : 36,
+    "district" : 3,
+    "name" : "秦慧珠",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "陳孋輝" : {
+    ".priority" : 37,
+    "district" : 3,
+    "name" : "陳孋輝",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "王鴻薇" : {
+    ".priority" : 38,
+    "district" : 3,
+    "name" : "王鴻薇",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "戴錫欽" : {
+    ".priority" : 39,
+    "district" : 3,
+    "name" : "戴錫欽",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "王正德" : {
+    ".priority" : 40,
+    "district" : 3,
+    "name" : "王正德",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "楊實秋" : {
+    ".priority" : 41,
+    "district" : 3,
+    "name" : "楊實秋",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "楊世光" : {
+    ".priority" : 42,
+    "district" : 3,
+    "name" : "楊世光",
+    "party" : "新黨",
+    "partyEng" : "NP",
+    "facebook" : "https://www.facebook.com/pages/%E6%A5%8A%E4%B8%96%E5%85%89%E7%9A%84%E6%96%B0%E8%A6%96%E9%87%8E/362509207185719"
+  },
+  "潘翰疆" : {
+    ".priority" : 43,
+    "district" : 3,
+    "name" : "潘翰疆",
+    "party" : "樹黨",
+    "partyEng" : "TP",
+    "facebook" : "https://www.facebook.com/pan.hanchiang"
+  },
+  "許家蓓" : {
+    ".priority" : 44,
+    "district" : 3,
+    "name" : "許家蓓",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "許淑華" : {
+    ".priority" : 45,
+    "district" : 3,
+    "name" : "許淑華",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "張茂楠" : {
+    ".priority" : 46,
+    "district" : 3,
+    "name" : "張茂楠",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "洪健益" : {
+    ".priority" : 47,
+    "district" : 3,
+    "name" : "洪健益",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "徐世勲" : {
+    ".priority" : 48,
+    "district" : 3,
+    "name" : "徐世勲",
+    "party" : "無黨籍",
+    "partyEng" : "NONE",
+    "facebook" : "https://www.facebook.com/WorldCityTaipei?fref=ts"
+  },
+  "王博玉" : {
+    ".priority" : 49,
+    "district" : 3,
+    "name" : "王博玉",
+    "party" : "無黨籍",
+    "partyEng" : "NONE"
+  },
+  "李卓翰" : {
+    ".priority" : 50,
+    "district" : 3,
+    "name" : "李卓翰",
+    "party" : "臺灣團結聯盟",
+    "partyEng" : "TSU",
+    "facebook" : "https://www.facebook.com/seeuneed"
+  },
+  "洪士奇" : {
+    ".priority" :51,
+    "district" : 3,
+    "name" : "洪士奇",
+    "party" : "親民黨",
+    "partyEng" : "PFP",
+    "facebook" : "https://www.facebook.com/husky119"
+  },
+  "王麗珠" : {
+    ".priority" : 52,
+    "district" : 4,
+    "name" : "王麗珠",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "林亭君" : {
+    ".priority" : 53,
+    "district" : 4,
+    "name" : "林亭君",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "葉林傳" : {
+    ".priority" : 54,
+    "district" : 4,
+    "name" : "葉林傳",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "陳炳甫" : {
+    ".priority" : 55,
+    "district" : 4,
+    "name" : "陳炳甫",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "鍾君竺" : {
+    ".priority" : 56,
+    "district" : 4,
+    "name" : "鍾君竺",
+    "party" : "人民民主陣線",
+    "partyEng" : "PATB",
+    "facebook" : "https://www.facebook.com/sceptism"
+  },
+  "林婕麗" : {
+    ".priority" : 57,
+    "district" : 4,
+    "name" : "林婕麗",
+    "party" : "新黨",
+    "partyEng" : "NP",
+    "facebook" : "https://www.facebook.com/pages/%E6%9E%97%E5%A9%95%E9%BA%97%E7%B2%89%E7%B5%B2%E5%9C%98/449300428506564"
+  },
+  "鄭惠齡" : {
+    ".priority" : 58,
+    "district" : 4,
+    "name" : "鄭惠齡",
+    "party" : "樹黨",
+    "partyEng" : "TP"
+  },
+  "梁文傑" : {
+    ".priority" : 59,
+    "district" : 4,
+    "name" : "梁文傑",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "王世堅" : {
+    ".priority" : 60,
+    "district" : 4,
+    "name" : "王世堅",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "黃向羣" : {
+    ".priority" : 61,
+    "district" : 4,
+    "name" : "黃向羣",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "顏若芳" : {
+    ".priority" : 62,
+    "district" : 4,
+    "name" : "顏若芳",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "楊鎮雄" : {
+    ".priority" : 63,
+    "district" : 4,
+    "name" : "楊鎮雄",
+    "party" : "無黨籍",
+    "partyEng" : "NONE",
+    "facebook" : "https://www.facebook.com/joseph.yang.104"
+  },
+  "簡聖哲" : {
+    ".priority" : 64,
+    "district" : 4,
+    "name" : "簡聖哲",
+    "party" : "臺灣團結聯盟",
+    "partyEng" : "TSU",
+    "facebook" : "https://www.facebook.com/pages/%E5%B9%B8%E7%A6%8F%E9%81%B8%E5%93%B2-%E7%B0%A1%E8%81%96%E5%93%B2%E5%8F%B0%E5%8C%97%E5%B8%82%E8%AD%B0%E5%93%A1%E5%80%99%E9%81%B8%E4%BA%BA%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%90%8C/754482091229986"
+  },
+  "林國成" : {
+    ".priority" : 65,
+    "district" : 4,
+    "name" : "林國成",
+    "party" : "親民黨",
+    "partyEng" : "PFP",
+    "facebook" : "https://www.facebook.com/GokuoCheng"
+  },
+  "應曉薇" : {
+    ".priority" : 66,
+    "district" : 5,
+    "name" : "應曉薇",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "吳志剛" : {
+    ".priority" : 67,
+    "district" : 5,
+    "name" : "吳志剛",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "鍾小平" : {
+    ".priority" : 68,
+    "district" : 5,
+    "name" : "鍾小平",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "郭昭巖" : {
+    ".priority" : 69,
+    "district" : 5,
+    "name" : "郭昭巖",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "張榮法" : {
+    ".priority" : 70,
+    "district" : 5,
+    "name" : "張榮法",
+    "party" : "新黨",
+    "partyEng" : "NP",
+    "facebook" : "https://www.facebook.com/pages/%E5%8F%B0%E5%8C%97%E5%B8%82%E8%AD%B0%E5%93%A1-%E4%B8%AD%E6%AD%A3%E8%90%AC%E8%8F%AF%E5%8D%80%E5%80%99%E9%81%B8%E4%BA%BA-%E5%BC%B5%E6%A6%AE%E6%B3%95/595532860544481"
+  },
+  "林佳諭" : {
+    ".priority" : 71,
+    "district" : 5,
+    "name" : "林佳諭",
+    "party" : "樹黨",
+    "partyEng" : "TP",
+    "facebook" : "https://www.facebook.com/jiayugogogo"
+  },
+  "董仲彥" : {
+    ".priority" : 72,
+    "district" : 5,
+    "name" : "董仲彥",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "顏聖冠" : {
+    ".priority" : 73,
+    "district" : 5,
+    "name" : "顏聖冠",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "劉耀仁" : {
+    ".priority" : 74,
+    "district" : 5,
+    "name" : "劉耀仁",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "周威佑" : {
+    ".priority" : 75,
+    "district" : 5,
+    "name" : "周威佑",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "康明道" : {
+    ".priority" : 76,
+    "district" : 5,
+    "name" : "康明道",
+    "party" : "無黨籍",
+    "partyEng" : "NONE"
+  },
+  "徐立信" : {
+    ".priority" : 77,
+    "district" : 5,
+    "name" : "徐立信",
+    "party" : "無黨籍",
+    "partyEng" : "NONE"
+  },
+  "謝建平" : {
+    ".priority" : 78,
+    "district" : 5,
+    "name" : "謝建平",
+    "party" : "臺灣團結聯盟",
+    "partyEng" : "TSU",
+    "facebook" : "https://www.facebook.com/Taiwan.scp"
+  },
+  "黃文章" : {
+    ".priority" : 79,
+    "district" : 5,
+    "name" : "黃文章",
+    "party" : "華聲黨",
+    "partyEng" : "WSP",
+    "website" : "http://twcn.tw/"
+  },
+  "陳蓋武" : {
+    ".priority" : 80,
+    "district" : 5,
+    "name" : "陳蓋武",
+    "party" : "親民黨",
+    "partyEng" : "PFP",
+    "facebook" : "https://www.facebook.com/pfp.ckw"
+  },
+  "歐陽龍" : {
+    ".priority" : 81,
+    "district" : 6,
+    "name" : "歐陽龍",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "李慶元" : {
+    ".priority" : 82,
+    "district" : 6,
+    "name" : "李慶元",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "徐弘庭" : {
+    ".priority" : 83,
+    "district" : 6,
+    "name" : "徐弘庭",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "李新" : {
+    ".priority" : 84,
+    "district" : 6,
+    "name" : "李新",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "王致雅" : {
+    ".priority" : 85,
+    "district" : 6,
+    "name" : "王致雅",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "厲耿桂芳" : {
+    ".priority" : 86,
+    "district" : 6,
+    "name" : "厲耿桂芳",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "王欣儀" : {
+    ".priority" : 87,
+    "district" : 6,
+    "name" : "王欣儀",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "陳錦祥" : {
+    ".priority" : 88,
+    "district" : 6,
+    "name" : "陳錦祥",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "陳彥伯" : {
+    ".priority" : 89,
+    "district" : 6,
+    "name" : "陳彥伯",
+    "party" : "新黨",
+    "partyEng" : "NP",
+    "facebook" : "https://www.facebook.com/pages/%E9%99%B3%E5%BD%A5%E4%BC%AF%E5%8A%A0%E6%B2%B9%E5%9C%98/131241610248544"
+  },
+  "潘翰聲" : {
+    ".priority" : 90,
+    "district" : 6,
+    "name" : "潘翰聲",
+    "party" : "樹黨",
+    "partyEng" : "TP",
+    "facebook" : "https://www.facebook.com/panhan3"
+  },
+  "周柏雅" : {
+    ".priority" : 91,
+    "district" : 6,
+    "name" : "周柏雅",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "李慶鋒" : {
+    ".priority" : 92,
+    "district" : 6,
+    "name" : "李慶鋒",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "王閔生" : {
+    ".priority" : 93,
+    "district" : 6,
+    "name" : "王閔生",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "簡舒培" : {
+    ".priority" : 94,
+    "district" : 6,
+    "name" : "簡舒培",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "阮昭雄" : {
+    ".priority" : 95,
+    "district" : 6,
+    "name" : "阮昭雄",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "聶紹雄" : {
+    ".priority" : 96,
+    "district" : 6,
+    "name" : "聶紹雄",
+    "party" : "無黨籍",
+    "partyEng" : "NONE"
+  },
+  "謝啟大" : {
+    ".priority" : 97,
+    "district" : 6,
+    "name" : "謝啟大",
+    "party" : "無黨籍",
+    "partyEng" : "NONE"
+  },
+  "青天" : {
+    ".priority" : 98,
+    "district" : 6,
+    "name" : "青天",
+    "party" : "無黨籍",
+    "partyEng" : "NONE"
+  },
+  "孫仲康" : {
+    ".priority" : 99,
+    "district" : 6,
+    "name" : "孫仲康",
+    "party" : "無黨籍",
+    "partyEng" : "NONE",
+    "facebook" : "https://www.facebook.com/pages/%E8%A6%8B%E5%BA%B7%E5%BF%AB%E6%A8%82/848789165147618"
+  },
+  "丁增義" : {
+    ".priority" : 100,
+    "district" : 6,
+    "name" : "丁增義",
+    "party" : "無黨籍",
+    "partyEng" : "NONE"
+  },
+  "歐陽瑞蓮" : {
+    ".priority" : 101,
+    "district" : 6,
+    "name" : "歐陽瑞蓮",
+    "party" : "臺灣團結聯盟",
+    "partyEng" : "TSU",
+    "facebook" : "https://www.facebook.com/teddy.ouyang"
+  },
+  "何啟聖" : {
+    ".priority" : 102,
+    "district" : 6,
+    "name" : "何啟聖",
+    "party" : "親民黨",
+    "partyEng" : "PFP",
+    "facebook" : "https://www.facebook.com/henryho0204"
+  },
+  "李芳儒" : {
+    ".priority" : 103,
+    "district" : 7,
+    "name" : "李芳儒",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "馬耀‧谷木MayawKumu" : {
+    ".priority" : 104,
+    "district" : 7,
+    "name" : "馬耀‧谷木MayawKumu",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "李傅中武LEEFUCHUNGWU" : {
+    ".priority" : 105,
+    "district" : 8,
+    "name" : "李傅中武LEEFUCHUNGWU",
+    "party" : "中國國民黨",
+    "partyEng" : "KMT"
+  },
+  "伊凡諾幹IbanNokan" : {
+    ".priority" : 106,
+    "district" : 8,
+    "name" : "伊凡諾幹IbanNokan",
+    "party" : "民主進步黨",
+    "partyEng" : "DPP"
+  },
+  "高李茂俊KAOLEEMAO-CHUN" : {
+    ".priority" : 107,
+    "district" : 8,
+    "name" : "高李茂俊KAOLEEMAO-CHUN",
+    "party" : "親民黨",
+    "partyEng" : "PFP"
+  }
+
+}
