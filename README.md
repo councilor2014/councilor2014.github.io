@@ -11,4 +11,4 @@
 
 ### DEMO
 
-[Demo](soidid.github.io/councilor2014/)
+[Demo](https://soidid.github.io/councilor2014/)
