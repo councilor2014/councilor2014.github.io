@@ -12,3 +12,10 @@
 ### DEMO
 
 [Demo](https://soidid.github.io/councilor2014/)
+
+### CC0 1.0 公眾領域貢獻宣告
+
+除候選人照片檔案之外，本目錄下的所有其他檔案，由作者在法律許可的範圍內，拋棄該著作依著作權法所享有之權利，包括所有相關 與鄰接的法律權利，並宣告將該著作貢獻至公眾領域。
+
+* [https://creativecommons.org/publicdomain/zero/1.0/deed.zh_TW]()https://creativecommons.org/publicdomain/zero/1.0/deed.zh_TW)
+* [http://wiki.creativecommons.org.tw/cc-zero-1-0:pre-final](http://wiki.creativecommons.org.tw/cc-zero-1-0:pre-final)
