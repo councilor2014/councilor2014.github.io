@@ -51,8 +51,12 @@ app.factory('DataService', function ($firebase){
   var DataService = {};
   var ref = new Firebase("https://councilor.firebaseio.com/");
   
-  DataService.candidates = function (){
+  DataService.getPreferences = function (){
+    var sync = $firebase(ref.child("preferences/"));
+    return sync.$asObject();
+    };
 
+  DataService.candidates = function (){
     var sync = $firebase(ref.child("candidates/"));
     //return sync.$asObject();
     return sync.$asArray();
@@ -209,9 +213,53 @@ app.controller('ReportCtrl', ['$scope', 'DataService', function ($scope, DataSer
 
 app.controller('MyListCtrl', ['$scope', 'DataService', '$routeParams', function ($scope, DataService, $routeParams){
     $scope.reports = DataService.getReports();
-    $scope.candidates = DataService.candidates();
+    $scope.candidatesObj = DataService.getCandidatesObj();
+
+    $scope.candidatesObj.$loaded().then(function(){
+        $scope.candidates =  $.map($scope.candidatesObj, function(value, index) {
+            if(typeof(value) === 'object' && value)
+               return [value];
+        });
+    });
+
+    $scope.preference = DataService.getPreferences();
+    $scope.listFilter = function(n){
+       if($scope.focusedList === 'all'){
+          return n;
+
+       }else if($scope.focusedList === 'ok'){
+          if($scope.preference){
+              if(!$scope.preference[n.name].status){
+                  return n;
+              }
+              
+          }
+
+       }else{
+          if($scope.preference){
+              if($scope.preference[n.name]){
+                if($scope.preference[n.name].status === $scope.focusedList)
+                    return n;
+              }
+          }
+       }
+          
+
+       
+    };
+    
     
     $scope.district = 'all';
+    
+    $scope.focusedList = 'all';
+    $scope.isListFocused = function(value){
+        return $scope.focusedList === value;
+    };
+    $scope.setListFocused = function(value){
+        $scope.focusedList = value;
+    };
+
+    
   
     var list = DataService.getDistricts();
     list.$loaded().then(function() {
@@ -260,7 +308,7 @@ app.controller('MyListCtrl', ['$scope', 'DataService', '$routeParams', function 
        
      
   
-      $(document).ready(function(){
+    $(document).ready(function(){
         var  $menuItem = $('.menu a.item, .menu .link.item');
       
         handler = {

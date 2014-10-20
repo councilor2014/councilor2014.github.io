@@ -15,19 +15,10 @@
   </div>
 
   <div class="ui menu">
-  <a class="active item">
-    全部
-  </a>
-  <a class="item">
-    已排除
-  </a>
-  <a class="item">
-    有疑慮
-  </a>
-  <a class="item">
-    還算安全
-  </a>
-  
+      <a class="item" ng-class="{'active':isListFocused('all')}" ng-click="setListFocused('all')">全部</a>
+      <a class="item" ng-class="{'active':isListFocused('out')}" ng-click="setListFocused('out')">已排除</a>
+      <a class="item" ng-class="{'active':isListFocused('considering')}" ng-click="setListFocused('considering')">有疑慮</a>
+      <a class="item" ng-class="{'active':isListFocused('ok')}" ng-click="setListFocused('ok')">還算安全</a>
   </div>
 
 <!-- ///// -->
@@ -37,11 +28,11 @@
        <span ng-show="!isSelected('all')">{{district.district_candidates}} 取 {{district.district_seats}}，機率：{{(district.district_seats/district.district_candidates)*100  | number : 0}}%</span>
   </div>
 
-  目前顯示：{{(candidates | filter:{name:query} | filter:districtFilter | filter: smallPartyFilter).length}}
+  目前顯示：{{(candidates | filter:{name:query} | filter:districtFilter | filter: listFilter).length}}
 
-  <div class="candidate_collection">
+  <div class="candidate_collection" ng-show="isListFocused('all')">
        
-       <div class="candidate" ng-repeat="n in candidates | filter:{name:query} |      filter:districtFilter | filter: smallPartyFilter" ng-class="{'candidate_present':n.present && showPresent}">
+       <div class="candidate" ng-repeat="n in candidates | filter:{name:query} |      filter:districtFilter | filter: listFilter" ng-class="{'candidate_present':n.present && showPresent}">
 
         <div class="ui left corner label" ng-show="n.present && showPresent">
            <div class="text">現任</div>
@@ -68,6 +59,34 @@
 
            
        </div>
+  </div><!-- end of candidate_collection -->
+  <div class="candidate_collection" ng-hide="isListFocused('all')">
+       
+      <div ng-repeat="n in candidates | filter:{name:query} | filter:districtFilter | filter: listFilter" ng-class="{'candidate_present':n.present && showPresent}">
+ 
+          <div class="ui feed segment">
+              <div class="event">
+                  <div class="label">
+                      <img ng-src="images/candidates/{{n.name}}.jpg" err-src="images/candidate-not-found.jpg">
+                  </div>
+                  <div class="content">
+                      {{n.name}} / {{n.party}}
+                      <div class="date">3 days ago</div>
+                      <div class="summary">在此列表的原因：</div>
+                      <div class="extra text">
+                          <div class="ui list">
+                                <a class="item" ng-repeat="">
+                                  <i class="right triangle icon"></i>
+                                  How do you know your dog likes you?
+                                </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+    
+      </div>
   </div><!-- end of candidate_collection -->
 </div><!-- end of ui segment -->
 </div><!-- end of wrapper -->
