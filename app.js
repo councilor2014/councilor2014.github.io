@@ -36,7 +36,7 @@ app.config(['$routeProvider','$locationProvider',
       controller: 'MyListCtrl'
     }).
       otherwise({
-      redirectTo:'/',
+      redirectTo:'/index',
       templateUrl: 'partials/index.html',
       controller: 'IndexCtrl'
     });
