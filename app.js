@@ -27,9 +27,13 @@ app.directive('errSrc', function() {
 app.config(['$routeProvider','$locationProvider',
   function($routeProvider,$locationProvider){
     $routeProvider.
-      when('/report',{
-      templateUrl: 'partials/report.html',
-      controller: 'ReportCtrl'
+      when('/mylist',{
+      templateUrl: 'partials/mylist.html',
+      controller: 'MyListCtrl'
+    }).
+      when('/mylist/:focusArea',{
+      templateUrl: 'partials/mylist.html',
+      controller: 'MyListCtrl'
     }).
       otherwise({
       redirectTo:'/',
@@ -37,7 +41,7 @@ app.config(['$routeProvider','$locationProvider',
       controller: 'IndexCtrl'
     });
 
-    $locationProvider.html5Mode(false);
+    $locationProvider.html5Mode(true);
 
   }
 ]);
@@ -91,16 +95,11 @@ app.factory('DataService', function ($firebase){
   };
 
   return DataService;
-
-  
-
 })
-
 app.controller('NavCtrl', ['$scope', '$location', function ($scope, $location){
    $scope.go = function(path){
       $location.path(path);
    };
-
 }]);
 app.controller('IndexCtrl', ['$scope', 'DataService', function ($scope, DataService){
    $scope.candidates = DataService.candidates();
@@ -137,19 +136,13 @@ app.controller('IndexCtrl', ['$scope', 'DataService', function ($scope, DataServ
    $scope.togglePartyName = function(){
       $scope.showPartyName = !$scope.showPartyName;
    };
-   
-   
 }]);
-
-app.controller('DistrictCtrl', ['$scope', 'DataService',function($scope, DataService){
+app.controller('DistrictCtrl', ['$scope', 'DataService',function ($scope, DataService){
 
   $scope.district = 'all';
-  
   $scope.districts = DataService.getDistricts();
-
   $scope.selectDistrict = function(district){
     $scope.district = district;
-
   };
   $scope.getDistrictName = function(no){
     //return "text";
@@ -158,7 +151,6 @@ app.controller('DistrictCtrl', ['$scope', 'DataService',function($scope, DataSer
         if(value.district_no == no){
            result = value.district_area;
         }
-
     });
     if(no=='all'||no=='search'){
        result = "所有選區";
@@ -175,7 +167,6 @@ app.controller('DistrictCtrl', ['$scope', 'DataService',function($scope, DataSer
 
   };
   $scope.districtFilter = function(item){
-    
     if(($scope.district === 'all')||( $scope.district === 'search')){
         return item;
     }else{
@@ -184,9 +175,7 @@ app.controller('DistrictCtrl', ['$scope', 'DataService',function($scope, DataSer
     }
    
   };
-
 }]);
-
 app.controller('ReportCtrl', ['$scope', 'DataService', function ($scope, DataService){
     $scope.reports = DataService.getReports();
     $scope.candidates = DataService.getCandidatesObj();
@@ -215,6 +204,91 @@ app.controller('ReportCtrl', ['$scope', 'DataService', function ($scope, DataSer
         }
         
 
+    };
+}]);
+
+app.controller('MyListCtrl', ['$scope', 'DataService', '$routeParams', function ($scope, DataService, $routeParams){
+    $scope.reports = DataService.getReports();
+    $scope.candidates = DataService.candidates();
+    
+    $scope.district = 'all';
+  
+    var list = DataService.getDistricts();
+    list.$loaded().then(function() {
+        $scope.districts = list;
+        if($routeParams.focusArea && $routeParams.focusArea > 0){
+           if(list[$routeParams.focusArea-1])
+              $scope.selectDistrict(list[$routeParams.focusArea-1]);
+        }
+    });   
+
+    $scope.selectDistrict = function(district){
+      $scope.district = district;
+    };
+    $scope.getDistrictName = function(no){
+      //return "text";
+      var result = "unset";
+      $.each($scope.districts, function(index,value){
+          if(value.district_no == no){
+             result = value.district_area;
+          }
+      });
+      if(no=='all'||no=='search'){
+         result = "所有選區";
+      }
+      return result;
+  
+    };
+    $scope.isSelected = function(value){
+      if(($scope.district === 'all')||( $scope.district === 'search')){
+          return $scope.district === value;
+      }else{
+          return $scope.district.district_no === value;
+      }
+  
+    };
+    $scope.districtFilter = function(item){
+      if(($scope.district === 'all')||( $scope.district === 'search')){
+          return item;
+      }else{
+          if(item.district === $scope.district.district_no)
+             return item;
+      }
+     
+    };
+  
+       
+     
+  
+      $(document).ready(function(){
+        var  $menuItem = $('.menu a.item, .menu .link.item');
+      
+        handler = {
+          activate: function() {
+            
+              $(this)
+                .addClass('active')
+                .closest('.ui.menu')
+                .find('.item')
+                  .not($(this))
+                  .removeClass('active')
+            ;
+        }
+      };
+      $menuItem.on('click', handler.activate);
+
+    });
+
+    $scope.districts = DataService.getDistrictsObj();
+    $scope.getCouncilorDistrict = function(name){
+        
+        if($scope.candidates[name]){
+          var district_no = $scope.candidates[name].district;
+          if($scope.districts[district_no]){
+             return $scope.districts[district_no].district_area;
+
+          }
+        }
     };
   
 
