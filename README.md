@@ -11,7 +11,7 @@
 
 ### DEMO
 
-[Demo](https://soidid.github.io/councilor2014/)
+[Demo](http://councilor2014.github.io/)
 
 ### CC0 1.0 公眾領域貢獻宣告
 
