@@ -177,12 +177,12 @@ app.controller('MyListCtrl', ['$scope', 'DataService', '$routeParams', function 
     $scope.candidatesObj.$loaded().then(function(){
         
         $.getJSON("https://spreadsheets.google.com/feeds/list/"+$routeParams.key+"/od6/public/values?alt=json", function(data) {
-            console.log(data.feed.entry[0]);
+            //console.log(data.feed.entry[0]);
             $.map(data.feed.entry,function(value, index){
 
                var candidate_name = value.gsx$name.$t;
                var candidate_status = value.gsx$state.$t;
-               console.log(candidate_name);
+               //console.log(candidate_name);
 
                if($scope.candidatesObj[candidate_name]){
                   if(candidate_status){
@@ -203,7 +203,8 @@ app.controller('MyListCtrl', ['$scope', 'DataService', '$routeParams', function 
                          current_reason = {};
                       }
                   });
-                  console.log($scope.candidatesObj[candidate_name]);
+                  //console.log($scope.candidatesObj[candidate_name]);
+
 
                }
                
@@ -216,8 +217,9 @@ app.controller('MyListCtrl', ['$scope', 'DataService', '$routeParams', function 
                 }    
             });
 
-            console.log($scope.candidates);
+            //console.log($scope.candidates);
             $scope.setListFocused('all');
+            $scope.$apply();
 
         });//end of getJson
     
