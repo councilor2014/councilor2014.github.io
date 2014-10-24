@@ -12,6 +12,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: rgb(0,191,198);
 }
 @media screen and (min-width: 1000px){
   .wrapper{
@@ -196,18 +197,6 @@ span.tooltip:after {
 	position: absolute;
 	top: 120px;
 	left:0px;
-}
-/* ------------------------------------------------------------ */
-/* Report */
-/* ------------------------------------------------------------ */
-.report_item {
-   width: 240px;
-}
-.report_src, .report_src:visited {
-  color: rgb(180,180,180);
-}
-.report_src:hover {
-  color: blue;
 }
 /* ------------------------------------------------------------ */
 /* Mylist */

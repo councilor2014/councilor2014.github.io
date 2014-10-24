@@ -1,10 +1,14 @@
 {
   "歐陽瑞蓮" : {
   	"status" : "out",
-  	"reason" : [{"des":"因為OOXX","src":"http://google.com.tw"},{"des":"test test","src":"http://google.com.tw"}]
+  	"reason" : [{"des":"因為OOXX","src":"http://google.com.tw"}]
   },
   "何啟聖" : {
   	"status" : "considering",
-  	"reason" : [{"des":"因為OOXX","src":"http://google.com.tw"},{"des":"test test","src":"http://google.com.tw"}]
+  	"reason" : [{"des":"因為OOXX","src":"http://google.com.tw"}]
+  },
+  "李慶元" : {
+  	"status" : "investigating",
+  	"reason" : [{"des":"因為OOXX","src":"http://google.com.tw"}]
   }
 }

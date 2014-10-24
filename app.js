@@ -41,7 +41,7 @@ app.config(['$routeProvider','$locationProvider',
       controller: 'IndexCtrl'
     });
 
-    $locationProvider.html5Mode(true);
+    //$locationProvider.html5Mode(true);
 
   }
 ]);
@@ -79,22 +79,6 @@ app.factory('DataService', function ($firebase){
 
     var sync = $firebase(ref.child("districts/"));
     return sync.$asObject();
-    
-  };
-
-  DataService.getReports = function (){
-
-    var sync = $firebase(ref.child("reports/"));
-    return sync.$asArray();
-    
-  };
-
-  DataService.pushReports = function ($item){
-
-    var sync = $firebase(ref.child("reports/"));
-    sync.$push($item).then(function(newChildRef) {
-        console.log("added record with id " + newChildRef.name());
-    });
     
   };
 
@@ -180,74 +164,55 @@ app.controller('DistrictCtrl', ['$scope', 'DataService',function ($scope, DataSe
    
   };
 }]);
-app.controller('ReportCtrl', ['$scope', 'DataService', function ($scope, DataService){
-    $scope.reports = DataService.getReports();
-    $scope.candidates = DataService.getCandidatesObj();
 
-    $scope.item = {};
-    $scope.submitReport = function(){
-        console.log("submit");
-        DataService.pushReports($scope.item);
-        $scope.item = {};
-      
-    };
-    $scope.toggleForm = function(){
-        $scope.showForm = !$scope.showForm;
-    };
-    $scope.districts = DataService.getDistrictsObj();
-    $scope.getCouncilorDistrict = function(name){
-        
-        if($scope.candidates[name]){
-          var district_no = $scope.candidates[name].district;
-          if($scope.districts[district_no]){
-             return $scope.districts[district_no].district_area;
-
-          }
-          
-
-        }
-        
-
-    };
-}]);
 
 app.controller('MyListCtrl', ['$scope', 'DataService', '$routeParams', function ($scope, DataService, $routeParams){
-    $scope.reports = DataService.getReports();
+    
     $scope.candidatesObj = DataService.getCandidatesObj();
+    $scope.preference = DataService.getPreferences();
 
     $scope.candidatesObj.$loaded().then(function(){
-        $scope.candidates =  $.map($scope.candidatesObj, function(value, index) {
-            if(typeof(value) === 'object' && value)
-               return [value];
+
+        $scope.preference.$loaded().then(function(){
+            var p = {};
+            $.map($scope.preference, function(value, index) {
+                if(typeof(value) === 'object' && value && value.status){
+                   p[index] = value;
+                }    
+            });
+            $.map(p, function(value, index) {
+                $.map(value, function(v, i) {
+                    $scope.candidatesObj[index][i] = v; 
+                });
+            });
+
+            //console.log($scope.candidatesObj);
+            $scope.candidates =  $.map($scope.candidatesObj, function(value, index) {
+                if(typeof(value) === 'object' && value && value.name){
+                   //console.log("index:"+index);
+                   //console.log(value);
+                   //console.log($scope.preference);
+                   //console.log("==============");
+                   return [value];
+                }    
+            });
+
         });
+        
     });
 
-    $scope.preference = DataService.getPreferences();
+    
     $scope.listFilter = function(n){
        if($scope.focusedList === 'all'){
           return n;
 
-       }else if($scope.focusedList === 'ok'){
-          if($scope.preference){
-              if(!$scope.preference[n.name].status){
-                  return n;
-              }
-              
-          }
-
        }else{
-          if($scope.preference){
-              if($scope.preference[n.name]){
+          if($scope.preference[n.name]){
                 if($scope.preference[n.name].status === $scope.focusedList)
                     return n;
-              }
           }
        }
-          
-
-       
     };
-    
     
     $scope.district = 'all';
     
@@ -259,8 +224,6 @@ app.controller('MyListCtrl', ['$scope', 'DataService', '$routeParams', function 
         $scope.focusedList = value;
     };
 
-    
-  
     var list = DataService.getDistricts();
     list.$loaded().then(function() {
         $scope.districts = list;
@@ -296,6 +259,7 @@ app.controller('MyListCtrl', ['$scope', 'DataService', '$routeParams', function 
   
     };
     $scope.districtFilter = function(item){
+      
       if(($scope.district === 'all')||( $scope.district === 'search')){
           return item;
       }else{
@@ -338,6 +302,7 @@ app.controller('MyListCtrl', ['$scope', 'DataService', '$routeParams', function 
           }
         }
     };
+
   
 
 }]);
