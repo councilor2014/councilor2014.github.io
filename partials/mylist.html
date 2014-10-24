@@ -37,7 +37,7 @@
                 <div class="status status_ok" ng-show="n.status === 'ok'">覺得不錯</div>
             </div>
 
-	          <img class="candidate_img" ng-src="images/candidates/{{n.name}}.jpg" err-src="     images/candidate-not-found.jpg" ng-click="setFocused(n.name)">
+	          <img class="candidate_img" ng-src="images/candidates/{{n.name}}.jpg" err-src="     images/candidate-not-found.jpg" ng-click="setListFocused(n.status || 'all')">
 	          <img class="candidate_party_img"
                  ng-src="images/party/{{n.partyEng}}.png"></img>
             <div class="candidate_name">{{n.name}}</div>
