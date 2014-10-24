@@ -31,9 +31,15 @@ app.config(['$routeProvider','$locationProvider',
       templateUrl: 'partials/mylist.html',
       controller: 'MyListCtrl'
     }).
-      when('/mylist/:focusArea',{
+      when('/mylist',{
+      templateUrl: 'partials/alllist.html'
+    }).
+      when('/mylist/:focusArea/:key',{
       templateUrl: 'partials/mylist.html',
       controller: 'MyListCtrl'
+    }).
+      when('/about',{
+      templateUrl: 'partials/about.html'
     }).
       otherwise({
       redirectTo:'/',
@@ -41,7 +47,7 @@ app.config(['$routeProvider','$locationProvider',
       controller: 'IndexCtrl'
     });
 
-    //$locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(true);
 
   }
 ]);
@@ -64,19 +70,16 @@ app.factory('DataService', function ($firebase){
   };
 
   DataService.getCandidatesObj = function (){
-
     var sync = $firebase(ref.child("candidates/"));
     return sync.$asObject();
   
   };
   DataService.getDistricts = function (){
-
     var sync = $firebase(ref.child("districts/"));
     return sync.$asArray();
     
   };
   DataService.getDistrictsObj = function (){
-
     var sync = $firebase(ref.child("districts/"));
     return sync.$asObject();
     
@@ -165,12 +168,62 @@ app.controller('DistrictCtrl', ['$scope', 'DataService',function ($scope, DataSe
   };
 }]);
 
-
 app.controller('MyListCtrl', ['$scope', 'DataService', '$routeParams', function ($scope, DataService, $routeParams){
     
     $scope.candidatesObj = DataService.getCandidatesObj();
     $scope.preference = DataService.getPreferences();
 
+    $scope.candidates = [];
+    $scope.candidatesObj.$loaded().then(function(){
+        
+        $.getJSON("https://spreadsheets.google.com/feeds/list/"+$routeParams.key+"/od6/public/values?alt=json", function(data) {
+            console.log(data.feed.entry[0]);
+            $.map(data.feed.entry,function(value, index){
+
+               var candidate_name = value.gsx$name.$t;
+               var candidate_status = value.gsx$state.$t;
+               console.log(candidate_name);
+
+               if($scope.candidatesObj[candidate_name]){
+                  if(candidate_status){
+                     $scope.candidatesObj[candidate_name].status = candidate_status;
+                  }
+
+                  $scope.candidatesObj[candidate_name].reason = [];
+                  var current_reason = {};
+                  $.map(value, function(v, i){
+                      if(i.indexOf('source')!==-1){
+                         current_reason.src = v.$t;
+                      }
+                      if(i.indexOf('reason')!==-1){
+                         current_reason.des = v.$t;
+                      }
+                      if(current_reason.src && current_reason.des){
+                         $scope.candidatesObj[candidate_name].reason.push(current_reason);
+                         current_reason = {};
+                      }
+                  });
+                  console.log($scope.candidatesObj[candidate_name]);
+
+               }
+               
+               
+            });
+            //console.log($scope.candidatesObj);
+            $scope.candidates =  $.map($scope.candidatesObj, function(value, index) {
+                if(typeof(value) === 'object' && value && value.name){
+                   return [value];
+                }    
+            });
+
+            console.log($scope.candidates);
+            $scope.setListFocused('all');
+
+        });//end of getJson
+    
+    });
+    
+    /*
     $scope.candidatesObj.$loaded().then(function(){
 
         $scope.preference.$loaded().then(function(){
@@ -200,29 +253,28 @@ app.controller('MyListCtrl', ['$scope', 'DataService', '$routeParams', function 
         });
         
     });
+    */
 
     
+
     $scope.listFilter = function(n){
        if($scope.focusedList === 'all'){
           return n;
 
        }else{
-          if($scope.preference[n.name]){
-                if($scope.preference[n.name].status === $scope.focusedList)
-                    return n;
-          }
+          if(n.status === $scope.focusedList)
+              return n;
        }
     };
-    
-    $scope.district = 'all';
-    
-    $scope.focusedList = 'all';
+   
+   
     $scope.isListFocused = function(value){
         return $scope.focusedList === value;
     };
     $scope.setListFocused = function(value){
         $scope.focusedList = value;
     };
+
 
     var list = DataService.getDistricts();
     list.$loaded().then(function() {
@@ -254,7 +306,12 @@ app.controller('MyListCtrl', ['$scope', 'DataService', '$routeParams', function 
       if(($scope.district === 'all')||( $scope.district === 'search')){
           return $scope.district === value;
       }else{
-          return $scope.district.district_no === value;
+          if($scope.district){
+             return $scope.district.district_no === value;
+
+          }else{
+             return false;
+          }   
       }
   
     };
@@ -263,14 +320,13 @@ app.controller('MyListCtrl', ['$scope', 'DataService', '$routeParams', function 
       if(($scope.district === 'all')||( $scope.district === 'search')){
           return item;
       }else{
-          if(item.district === $scope.district.district_no)
-             return item;
+          if($scope.district){
+            if(item.district === $scope.district.district_no)
+              return item;
+          } 
       }
-     
     };
   
-       
-     
   
     $(document).ready(function(){
         var  $menuItem = $('.menu a.item, .menu .link.item');
@@ -301,6 +357,10 @@ app.controller('MyListCtrl', ['$scope', 'DataService', '$routeParams', function 
 
           }
         }
+    };
+
+    $scope.toggleStatus = function(){
+        $scope.hideStatus = !$scope.hideStatus;
     };
 
   

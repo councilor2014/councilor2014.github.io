@@ -9,6 +9,7 @@ body {
   text-rendering: optimizeLegibility;
   min-width: 320px;
   background: rgb(239, 237, 235);
+  color: rgb(55,53,54);
 }
 a {
   text-decoration: none;
@@ -203,6 +204,33 @@ span.tooltip:after {
 /* ------------------------------------------------------------ */
 .candidate_description {
    width: 100%;
+}
+.candidate_check_info {
+  z-index: 5;
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  top: 80px;
+  left: 0px; 
+  text-align: center; 
+  font-weight: 300;
+}
+.status {
+  padding: 5px;
+}
+.status_out {
+  background: rgba(214,90,90,0.8);
+  color:white;
+}
+.status_considering {
+  background: rgba(200,200,200,0.8);
+}
+.status_investigating {
+  background: rgba(225,206,64,0.8);
+}
+.status_ok {
+  background: rgba(89,186,122,0.8);
+  color:white;
 }
 
 

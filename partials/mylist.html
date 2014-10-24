@@ -1,17 +1,8 @@
 <div id="content" class="wrapper">
   <div class="ui segment">
-  
   <div class="ui small icon input">
      <i class="search icon"></i>
      <input type="text" placeholder="姓名搜尋" ng-model="query">
-  </div>
-  <div class="ui secondary menu">
-    <a class="item"
-       ng-click="selectDistrict('all')" 
-       ng-class="{'active':isSelected('all')}">所有選區</a> 
-    <a class="item" ng-repeat="d in districts"
-       ng-click="selectDistrict(d)" 
-       ng-class="{'active':isSelected(d.district_no)}">{{d.district_area}}</a>    
   </div>
 
   <div class="ui menu">
@@ -27,29 +18,23 @@
   <div class="candidate_collection_title">
        <h2 ng-show="district.district_no">台北市第 {{district.district_no}} 選舉區：{{district.district_area}}</h2>
        <span ng-show="!isSelected('all')">{{district.district_candidates}} 取 {{district.district_seats}}，機率：{{(district.district_seats/district.district_candidates)*100  | number : 0}}%</span>
+       <div class="ui right floated tiny button" ng-click="toggleStatus()">
+           <span ng-hide="hideStatus">隱藏標籤</span>
+           <span ng-show="hideStatus">顯示標籤</span>
+       </div>
   </div>
-
+  
   目前顯示：{{(candidates | filter:{name:query} | filter:districtFilter | filter: listFilter).length}}
 
   <div class="candidate_collection" ng-show="isListFocused('all')">
        
-       <div class="candidate" ng-repeat="n in candidates | filter:{name:query} |      filter:districtFilter | filter: listFilter" ng-class="{'candidate_present':n.present && showPresent}">
+       <div class="candidate" ng-repeat="n in candidates | filter:{name:query} |      filter:districtFilter | filter: listFilter">
 
-        <div class="ui left corner label" ng-show="n.present && showPresent">
-           <div class="text">現任</div>
-        </div>
-            
-            <div class="candidate_info" ng-show="isFocused(n.name)">
-                <div class="remove_tooltip"><i class="ui remove icon" ng-click="setFocused('none')"></i></div>
-                <span class="tooltip">
-                    <a class="candidate_info_item" href="{{n.facebook}}" ng-show="n.facebook" target="_blank">Facebook</a>
-                    <a class="candidate_info_item" href="{{n.website}}" ng-show="n.website"target="_blank">Website</a>
-                    <a class="candidate_info_item" href="{{n.g0vbill}}" ng-show="n.g0vbill" target="_blank">議案</a>
-                    <a class="candidate_info_item" href="{{n.g0vsuggestor}}" ng-show="n.g0vsuggestor" target="_blank">工程建議款</a>
-                    <span ng-hide="n.facebook || n.website || n.g0vbill || n.g0vsuggestor"><br/>資料收集中</span>
-                    
-                </span>
-            
+            <div class="candidate_check_info" ng-hide="hideStatus">
+                <div class="status status_out" ng-show="n.status === 'out'">已排除</div>
+                <div class="status status_considering" ng-show="n.status === 'considering'">有疑慮</div>
+                <div class="status status_investigating" ng-show="n.status === 'investigating'">了解中</div>
+                <div class="status status_ok" ng-show="n.status === 'ok'">覺得不錯</div>
             </div>
 
 	          <img class="candidate_img" ng-src="images/candidates/{{n.name}}.jpg" err-src="     images/candidate-not-found.jpg" ng-click="setFocused(n.name)">
@@ -72,7 +57,7 @@
                   </div>
                   <div class="content">
                       {{n.name}} / {{n.party}}
-                      <div class="date">3 days ago</div>
+                      <!-- <div class="date">3 days ago</div> -->
                       <div class="summary">在此列表的原因：</div>
                       <div class="extra text">
                           <div class="ui list">
